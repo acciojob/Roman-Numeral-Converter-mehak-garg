@@ -21,7 +21,7 @@ if(num>=1000)
 	str=str+C+M;  
 num=num-900;
   }
-if(num>=500&num<1000)
+if(num>=500&&num<1000)
 {while(num>=500)
 	{
 	str=str+D;
@@ -33,7 +33,7 @@ if(num>=500&num<1000)
 	str=str+C+D;  
 num=num-400;
   }
-if(num>=100&num<500)
+if(num>=100&&num<500)
 {while(num>=100)
 	{
 	str=str+C;
@@ -45,7 +45,7 @@ if(num>=100&num<500)
 	str=str+X+C;  
 num=num-90;
   }
-	if(num>=50&num<100)
+	if(num>=50&&num<100)
 {while(num>=50)
 	{
 	str=str+L;
@@ -85,10 +85,11 @@ if(num>=1&&num<5)
 {
 	while(num>=1)
 		{
-str=str+I;}
+str=str+I;
+		num=num-1;}
 }
 
-}	
+return str;	
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
