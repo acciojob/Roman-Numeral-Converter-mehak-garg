@@ -12,80 +12,80 @@ function convertToRoman(num) {
 if(num>=1000)
 {while(num>=1000)
 	{
-	str=str+M;
+	str=str+"M";
 		num=num-1000;
 }
 }
   if(num>=900&&num<1000)
   {
-	str=str+C+M;  
+	str=str+"C"+"M";  
 num=num-900;
   }
 if(num>=500&&num<1000)
 {while(num>=500)
 	{
-	str=str+D;
+	str=str+"D";
 		num=num-500;
 }
 }
 	if(num>=400&&num<500)
   {
-	str=str+C+D;  
+	str=str+"C"+"D";  
 num=num-400;
   }
 if(num>=100&&num<500)
 {while(num>=100)
 	{
-	str=str+C;
+	str=str+"C";
 		num=num-100;
 }
 }
 	if(num>=90&&num<100)
   {
-	str=str+X+C;  
+	str=str+"X"+"C";  
 num=num-90;
   }
 	if(num>=50&&num<100)
 {while(num>=50)
 	{
-	str=str+L;
+	str=str+"L";
 		num=num-50;
 }
 }
 	if(num>=40&&num<50)
   {
-	str=str+X+L;  
+	str=str+"X"+"L";  
 num=num-40;
   }
 if(num>=10&&num<50)
 {while(num>=10)
 	{
-	str=str+X;
+	str=str+"X";
 		num=num-10;
 }
 }
 	if(num===9)
   {
-	str=str+I+X;  
+	str=str+"I"+"X";  
 num=num-9;
   }
 if(num>=5&&num<10)
 {while(num>=5)
 	{
-	str=str+V;
+	str=str+"V";
 		num=num-5;
 }
 }
 	if(num===4)
   {
-	str=str+I+V;  
+	str=str+"I"+"V";  
 num=num-4;
   }
 if(num>=1&&num<5)
 {
 	while(num>=1)
 		{
-str=str+I;
+str=str+"I";
 		num=num-1;}
 }
 
